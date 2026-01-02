@@ -6,6 +6,7 @@ import { Link } from "react-router-dom"
 function Navbar() {
     const [isOpen , setIsOpen] = useState(false);
     const [search , setSearch] = useState(false);
+    const [value , setValue] = useState("");
     const list:{href:string, title:string}[] = [
         {
             href: "/",
@@ -62,6 +63,7 @@ function Navbar() {
                 <SearchIcon size={28} onClick={() => setSearch(!search)} />
                 <ShoppingBagIcon size={28} />
             </div>
+            {/* Search bar */}
             <div className={`h-screen w-full justify-between p-6 gap-2 absolute top-0 left-0 bg-black/20 backdrop-blur-md z-50 ${search?"flex":"hidden"}`}>
                 <div className="flex justify-between md:w-[70%] w-[90%] mx-auto h-fit bg-stone-50 py-3 px-5 gap-4">
                     <input type="text" placeholder="Search here..." className="w-[80%] border-b-2 bg-gray-100 border-black rounded outline-0 px-3 py-1" />

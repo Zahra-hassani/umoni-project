@@ -42,9 +42,9 @@ function Footer() {
             </div>
         </div>
       </div>
-      <div className="flex justify-between gap-3">
+      <div className="flex lg:justify-between lg:flex-row justify-center flex-col items-center lg:gap-90 gap-4 border-t-stone-200 border-t-2 md:pb-0 pb-20 pt-4 px-5">
         <p className="text-gray-500">&copy;2025 Umoni . All rights reserved.</p>
-        <img src="./payment-product.jpg" alt="" />
+        <img src="./payment-product.png" alt="" className="py-2" />
       </div>
     </div>
   )

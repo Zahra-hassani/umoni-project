@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import Slider, { type Settings } from "react-slick"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Link } from "react-router-dom";
 
 
 const settings:Settings = {
@@ -56,7 +57,7 @@ function Hero() {
         <span className="text-[12px] font-medium uppercase">Top Trending</span>
         <h1 className="text-5xl font-bold">Lifestyle</h1>
         <p>Upgrade your home with our amazing assotment of decor.</p>
-        <button className="px-6 py-2 bg-black text-white font-bold text-base hover:text-black hover:bg-white transition-all duration-300">Explore Now</button>
+        <button className="px-6 py-2 bg-black text-white font-bold text-base hover:text-black hover:bg-white transition-all duration-300"><Link to="/shop">Explore Now</Link></button>
       </motion.div>
       <div>
       <Slider {...settings}>

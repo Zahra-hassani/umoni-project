@@ -1,3 +1,5 @@
+import { Heart, ShoppingBagIcon } from "lucide-react";
+import { Link } from "react-router-dom";
 
 
 function TopSofas() {
@@ -35,10 +37,14 @@ function TopSofas() {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 p-4">
         {sofas.map((sofa)=> (
-            <div key={sofa.id} className="flex flex-col gap-3">
+            <div key={sofa.id} className="flex flex-col gap-3 relative group">
                 <img src={sofa.imgUrl} alt="" className="h-[80%] w-full" />
                 <h3 className="font-bold">{sofa.name}</h3>
                 <p className="text-base">${sofa.price}</p>
+                <div className="absolute top-0 left-0 w-full h-[80%] opacity-0 group-hover:opacity-100 bg-black/10 transition-all duration-300 flex flex-col items-end p-3.5 gap-4">
+                    <Heart size={34} className="hover:text-white transition-all duration-300 font-bold group-hover:scale-100 scale-0 hover:bg-white bg-clip-text cursor-pointer" />
+                    <Link to='/shop'><ShoppingBagIcon size={34} className="hover:text-white transition-all duration-300 font-bold group-hover:scale-100 scale-0 hover:bg-white bg-clip-text" /></Link>
+                </div>
             </div>
         ))}
       </div>
