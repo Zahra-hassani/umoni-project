@@ -2,6 +2,7 @@ import BestFeatures from "@/mycomponents/BestFeatures"
 import HeroShare from "@/mycomponents/HeroShare"
 import OurBrand from "@/mycomponents/OurBrand"
 import OurTeam from "@/mycomponents/OurTeam"
+import Testimonial from "@/mycomponents/Testimonial"
 
 
 function About() {
@@ -11,6 +12,7 @@ function About() {
       <OurBrand />
       <BestFeatures />
       <OurTeam />
+      <Testimonial />
     </div>
   )
 }
