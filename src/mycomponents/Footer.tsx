@@ -17,7 +17,7 @@ function Footer() {
             </div>
             <div>
                 <p className="font-bold">www.umonigroup.com</p>
-                <p className="font-bold">(08)89421299</p>
+                <Link to="tele: 0889421299" className="font-bold">(08)89421299</Link>
             </div>
         </div>
         <div className="flex justify-between flex-col gap-2">

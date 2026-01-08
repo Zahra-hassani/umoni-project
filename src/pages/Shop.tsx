@@ -1,5 +1,5 @@
 import HeroShare from "@/mycomponents/HeroShare";
-import Products from "@/mycomponents/Products";
+import OurProducts from "@/mycomponents/OurProducts";
 
 
 
@@ -9,7 +9,7 @@ function Shop
   return (
     <div>
       <HeroShare title='Shop' />
-      <Products />
+      <OurProducts />
     </div>
   )
 }

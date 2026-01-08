@@ -91,6 +91,21 @@ function Testimonial() {
                 <div className="h-full w-full">
                     <img src="./test-1.jpg" className="h-full w-full" alt="" />
                 </div>
+            <div className="w-full">
+                    <p className="font-sans font-bold text-[12px] uppercase">from the people</p>
+                    <div className="flex">
+                    <Star size={24} className="text-yellow-400" />
+                    <Star size={24} className="text-yellow-400" />
+                    <Star size={24} className="text-yellow-400" />
+                    <Star size={24} className="text-yellow-400" />
+                    <Star size={24} className="text-neutral-400" />
+                    </div>
+                    <p className="text-xl font-semibold">What I admire about art is the unexpected, the originality:architecture is of course the context and the home of what we make.</p>
+                    <p className="font-bold"> Michael C.</p>
+            </div>
+                <div className="h-full w-full">
+                    <img src="./test-1.jpg" className="h-full w-full" alt="" />
+                </div>
             {/* <div className="flex items-center gap-4 p-5">
                 <div className="flex flex-col gap-4 p-4">
                     <p className="font-sans font-bold text-[12px] uppercase">from the people</p>
