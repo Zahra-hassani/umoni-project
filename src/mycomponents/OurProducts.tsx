@@ -5,7 +5,7 @@ import { Heart, ShoppingBagIcon } from 'lucide-react'
 
 function OurProducts() {
     const filteredProducts = products.filter((product) => {
-        if(product.id === 6 || product.id === 8 || product.id === 15 || product.id === 14 || product.id > 18 ){
+        if(product.id === 7 || product.id === 6 || product.id === 14 || product.id === 12 || product.id === 8 || product.id === 15 ){
             return "";
         }
         else{
